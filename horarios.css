@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+    .dias-navegacao {
+        flex-wrap: wrap;
+    }
+    /* ... outros estilos responsivos dos horários ... */
+} 

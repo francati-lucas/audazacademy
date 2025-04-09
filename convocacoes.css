@@ -1,0 +1,287 @@
+/* Hero Section */
+.convocacoes-hero {
+    background-color: #38013f;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+}
+
+.convocacoes-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.convocacoes-hero p {
+    font-size: 1rem;
+    opacity: 0.9;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Container de Convocações */
+.convocacoes-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+/* Card de Convocação */
+.convocacao-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.convocacao-card:hover {
+    transform: translateY(-5px);
+}
+
+.convocacao-header {
+    background-color: #38013f;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.convocacao-header h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.data {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.convocacao-info {
+    padding: 25px;
+}
+
+.jogo-info {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.jogo-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.jogo-info i {
+    color: #38013f;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.jogadores-lista {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.jogadores-lista h4 {
+    color: #38013f;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.jogadores-lista ul {
+    list-style: none;
+    padding: 0;
+}
+
+.jogadores-lista li {
+    padding: 8px 0;
+    color: #666;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
+.instrucoes {
+    background-color: rgba(56, 1, 63, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.instrucoes p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #38013f;
+    font-weight: 500;
+}
+
+.instrucoes i {
+    margin-right: 10px;
+}
+
+/* Ajustes no Card */
+.campeonato-info {
+    flex: 1;
+}
+
+.categoria-data {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.categoria {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.ver-escalacao {
+    background-color: #38013f;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.ver-escalacao:hover {
+    background-color: #4b0252;
+    transform: translateY(-2px);
+}
+
+/* Pop-up */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.fechar-popup {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+}
+
+.popup h3 {
+    color: #38013f;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .convocacoes-container {
+        grid-template-columns: 1fr;
+        padding: 0 15px 60px;
+    }
+
+    .convocacao-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .convocacao-header h3 {
+        margin-bottom: 10px;
+    }
+
+    .data {
+        display: inline-block;
+    }
+
+    .popup-content {
+        width: 95%;
+        padding: 20px;
+    }
+} 
+.sem-convocacoes {
+    min-height: calc(100vh - 400px); /* Ajusta altura considerando header e footer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.sem-convocacoes-content {
+    text-align: center;
+    max-width: 600px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sem-convocacoes i {
+    font-size: 4rem;
+    color: #38013f;
+    margin-bottom: 20px;
+}
+
+.sem-convocacoes h1 {
+    color: #38013f;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.sem-convocacoes p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.voltar-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #38013f;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid #38013f;
+}
+
+.voltar-btn:hover {
+    background-color: transparent;
+    color: #38013f;
+    transform: translateY(-2px);
+}

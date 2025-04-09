@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convocações - Audaz Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/convocacoes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive/global.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="imagens/logo.png" alt="Logo Audaz">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#quem-somos">Quem somos</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="horarios.html">Horários</a></li>
+                <li><a href="convocacoes.html">Convocações</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/audazacademy?igsh=MWpyNWRnaXcwajVraw==" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@audazfc?_t=ZM-8trCATZ5aR4&_r=1" target="_blank" class="social-icon">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://wa.me/5519991684971" target="_blank" class="social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <button class="menu-mobile" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sem-convocacoes">
+            <div class="sem-convocacoes-content">
+                <i class="fas fa-calendar-times"></i>
+                <h1>Estamos Sem Convocações no Momento</h1>
+                <p>Fique atento! Em breve novas convocações serão publicadas aqui.</p>
+                <a href="index.html" class="voltar-btn">Voltar para Home</a>
+            </div>
+        </section>
+        <!-- 
+        <section class="convocacoes-hero">
+            <h1>Convocações</h1>
+            <p>Confira as últimas convocações para jogos e campeonatos</p>
+        </section>
+
+        <section class="convocacoes-container">
+            <div class="convocacao-card">
+                <div class="convocacao-header">
+                    <div class="campeonato-info">
+                        <h3>Campeonato Amador</h3>
+                        <div class="categoria-data">
+                            <span class="categoria">Sub-20</span>
+                            <span class="data">15/03/2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="convocacao-info">
+                    <div class="jogo-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Campo Audaz Arena</p>
+                        <p><i class="fas fa-clock"></i> 10:00</p>
+                    </div>
+                    <button class="ver-escalacao" onclick="abrirPopup('popup1')">Ver Escalação</button>
+                </div>
+            </div>
+
+            
+            <div id="popup1" class="popup">
+                <div class="popup-content">
+                    <span class="fechar-popup" onclick="fecharPopup('popup1')">&times;</span>
+                    <h3>Jogadores Convocados</h3>
+                    <div class="jogadores-lista">
+                        <ul>
+                            <li>Lucas Fernando</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                        </ul>
+                    </div>
+                    <div class="instrucoes">
+                        <p><i class="fas fa-exclamation-circle"></i> Apresentar-se com 1 hora e Meia de antecedência</p>
+                        <p><i class="fas fa-tshirt"></i> Uniforme: Principal (Roxo)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="convocacoes-container">
+            <div class="convocacao-card">
+                <div class="convocacao-header">
+                    <div class="campeonato-info">
+                        <h3>Campeonato Regional</h3>
+                        <div class="categoria-data">
+                            <span class="categoria">Sub-12</span>
+                            <span class="data">24/03/2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="convocacao-info">
+                    <div class="jogo-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Campo Audaz Arena</p>
+                        <p><i class="fas fa-clock"></i> 09:00</p>
+                    </div>
+                    <button class="ver-escalacao" onclick="abrirPopup('popup2')">Ver Escalação</button>
+                </div>
+            </div>
+
+           
+            <div id="popup2" class="popup">
+                <div class="popup-content">
+                    <span class="fechar-popup" onclick="fecharPopup('popup2')">&times;</span>
+                    <h3>Jogadores Convocados</h3>
+                    <div class="jogadores-lista">
+                        <ul>
+                            <li>Lucas Silva</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                        </ul>
+                    </div>
+                    <div class="instrucoes">
+                        <p><i class="fas fa-exclamation-circle"></i> Apresentar-se com 1 hora e Meia de antecedência</p>
+                        <p><i class="fas fa-tshirt"></i> Uniforme: Principal (Roxo)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="convocacoes-container">
+            <div class="convocacao-card">
+                <div class="convocacao-header">
+                    <div class="campeonato-info">
+                        <h3>Campeonato Regional</h3>
+                        <div class="categoria-data">
+                            <span class="categoria">Sub-12</span>
+                            <span class="data">24/03/2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="convocacao-info">
+                    <div class="jogo-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Campo Audaz Arena</p>
+                        <p><i class="fas fa-clock"></i> 09:00</p>
+                    </div>
+                    <button class="ver-escalacao" onclick="abrirPopup('popup3')">Ver Escalação</button>
+                </div>
+            </div>
+
+          
+            <div id="popup3" class="popup">
+                <div class="popup-content">
+                    <span class="fechar-popup" onclick="fecharPopup('popup3')">&times;</span>
+                    <h3>Jogadores Convocados</h3>
+                    <div class="jogadores-lista">
+                        <ul>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                        </ul>
+                    </div>
+                    <div class="instrucoes">
+                        <p><i class="fas fa-exclamation-circle"></i> Apresentar-se com 1 hora e Meia de antecedência</p>
+                        <p><i class="fas fa-tshirt"></i> Uniforme: Principal (Roxo)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="convocacoes-container">
+            <div class="convocacao-card">
+                <div class="convocacao-header">
+                    <div class="campeonato-info">
+                        <h3>Campeonato Regional</h3>
+                        <div class="categoria-data">
+                            <span class="categoria">Sub-12</span>
+                            <span class="data">24/03/2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="convocacao-info">
+                    <div class="jogo-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Campo Audaz ACADEMY</p>
+                        <p><i class="fas fa-clock"></i> 09:00</p>
+                    </div>
+                    <button class="ver-escalacao" onclick="abrirPopup('popup4')">Ver Escalação</button>
+                </div>
+            </div>
+
+           
+            <div id="popup4" class="popup">
+                <div class="popup-content">
+                    <span class="fechar-popup" onclick="fecharPopup('popup4')">&times;</span>
+                    <h3>Jogadores Convocados</h3>
+                    <div class="jogadores-lista">
+                        <ul>
+                            <li>Lucas Godoy</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Lucas Francati</li>
+                            <li>Juninho CApixaba</li>
+                            <li>Juinho Capixaba</li>
+                        </ul>
+                    </div>
+                    <div class="instrucoes">
+                        <p><i class="fas fa-exclamation-circle"></i> Apresentar-se com 1 hora e Meia de antecedência</p>
+                        <p><i class="fas fa-tshirt"></i> Uniforme: Principal (Roxo)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+         -->
+
+        <!-- Botão flutuante do WhatsApp -->
+        <a href="https://wa.me/5519991684971" class="whatsapp-float" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="imagens/logo.png" alt="Logo Audaz" class="footer-logo">
+                    <p>Desenvolvendo atletas e formando cidadãos desde 2020.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> (19) 99168 - 4971</p>
+                    <p><i class="fas fa-envelope"></i>audazacademy@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Pacífico Moneda, 1850 - Vargeão, Jaguariúna - SP</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/audazacademy?igsh=MWpyNWRnaXcwajVraw==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@audazfc?_t=ZM-8trCATZ5aR4&_r=1" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/5519991684971" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Audaz Academy. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    function abrirPopup(popupId) {
+        document.getElementById(popupId).style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function fecharPopup(popupId) {
+        document.getElementById(popupId).style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+
+    // Fechar pop-up quando clicar fora dele
+    window.onclick = function(event) {
+        if (event.target.classList.contains('popup')) {
+            event.target.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    }
+    </script>
+    <script src="../js/menu.js"></script>
+    
+</body>
+</html> 
