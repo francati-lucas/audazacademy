@@ -1,0 +1,191 @@
+/* Hero Section */
+.contato-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.contato-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Informações de Contato */
+.contato-info {
+    background-color: #38013f;
+    color: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.contato-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.contato-info > p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 50%;
+    min-width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-item div {
+    flex: 1;
+}
+
+.info-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.info-item p {
+    opacity: 0.9;
+    font-size: 1rem;
+}
+
+/* Mapa Section */
+.mapa-section {
+    position: relative;
+    margin: 60px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.mapa-wrapper {
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mapa-section iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease;
+}
+
+.mapa-section iframe:hover {
+    filter: grayscale(0%);
+}
+
+/* Overlay do Mapa */
+.mapa-overlay {
+    background-color: rgba(56, 1, 63, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.mapa-overlay h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.mapa-overlay p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Redes Sociais */
+.contato-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.contato-social a {
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.contato-social a:hover {
+    background-color: white;
+    color: #38013f;
+    transform: translateY(-3px);
+}
+
+/* Botão do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+/* Animação de Pulso */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.whatsapp-float {
+    animation: pulse 2s infinite;
+}
+

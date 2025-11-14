@@ -1,0 +1,168 @@
+/* Hero Section */
+.produtos-hero {
+    background-color: #38013f;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+}
+
+.produtos-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.produtos-hero p {
+    font-size: 1rem;
+    opacity: 0.9;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Grid de Produtos */
+.produtos-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+/* Card de Produto */
+.produto-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.produto-card:hover {
+    transform: translateY(-10px);
+}
+
+.produto-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 3px solid #38013f;
+}
+
+/* Conteúdo do Card */
+.produto-card-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.produto-card h3 {
+    font-size: 1.5rem;
+    color: #38013f;
+    margin-bottom: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.produto-card p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: center;
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.produto-preco {
+    font-size: 1.8rem;
+    color: #38013f;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.produto-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #38013f;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid #38013f;
+    text-align: center;
+    margin: 0 20px 20px;
+}
+
+.produto-btn:hover {
+    background-color: transparent;
+    color: #38013f;
+}
+
+/* Tag de Destaque */
+.produto-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #38013f;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    z-index: 2;
+    box-shadow: 0 2px 10px rgba(56, 1, 63, 0.2);
+}
+
+/* Categorias */
+.produtos-categorias {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.categoria-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: transparent;
+    border: 2px solid #38013f;
+    color: #38013f;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.categoria-btn:hover,
+.categoria-btn.active {
+    background-color: #38013f;
+    color: white;
+}
+
+/* Adicione estes estilos ao seu arquivo CSS */
+.produto-card.em-breve {
+    opacity: 0.9;
+    position: relative;
+}
+
+.produto-btn.disabled {
+    background-color: #666;
+    border-color: #666;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.produto-card.em-breve img {
+    filter: grayscale(20%);
+}
+
+/* Efeito hover especial para cards em breve */
+.produto-card.em-breve:hover {
+    transform: translateY(-5px);
+} 

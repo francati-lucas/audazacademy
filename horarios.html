@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolinha de Futebol</title>
+    <link rel="icon" type="image/png" href="imagens/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/horarios.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/responsive/global.css">
+    <link rel="stylesheet" href="css/responsive/horarios.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- ... conteúdo do header ... -->
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="imagens/logo.png" alt="Logo Audaz">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#quem-somos">Quem somos</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="horarios.html">Horários</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/audazacademy?igsh=MWpyNWRnaXcwajVraw==" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@audazfc?_t=ZM-8trCATZ5aR4&_r=1" target="_blank"
+                    class="social-icon">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://wa.me/5519991684971" target="_blank" class="social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            <button class="menu-mobile" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="horarios-hero">
+            <h1>Horários de Treino</h1>
+            <p>Escolha o melhor horário para seu desenvolvimento</p>
+        </section>
+
+        <section class="horarios-container">
+            <div class="dias-navegacao">
+                <button class="dia-btn active" data-dia="segunda">Segunda</button>
+                <button class="dia-btn" data-dia="terca">Terça</button>
+                <button class="dia-btn" data-dia="quarta">Quarta</button>
+                <button class="dia-btn" data-dia="quinta">Quinta</button>
+                <button class="dia-btn" data-dia="sabado">Sábado</button>
+            </div>
+
+            <div class="dia-horarios active" id="segunda">
+                <h2>Segunda-Feira</h2>
+                <div class="horarios-grid">
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">08:30</span>
+                            <span class="categoria">Sub 13/15</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2010, 2011 e 2012</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Oficial</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">18:00</span>
+                            <span class="categoria">Sub 7</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2018 e 2019</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Society</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">19:00</span>
+                            <span class="categoria">Sub 9</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2016 e 2018</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Society</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">20:00</span>
+                            <span class="categoria">Sub 11</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2014 e 2015</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Society</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dia-horarios" id="terca">
+                <h2>Terça-Feira</h2>
+                <div class="horarios-grid">
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">15:30</span>
+                            <span class="categoria">Sub 13/14/15</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2010, 2011 e 2012</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Oficial</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">16:30</span>
+                            <span class="categoria">Sub 10/11/12</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2013, 2014 e 2015</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Oficial</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">18:00</span>
+                            <span class="categoria">Sub 9</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2016, 2017</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Society</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">19:00</span>
+                            <span class="categoria">Sub 11</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2014, 2015</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Society</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">20:00</span>
+                            <span class="categoria">Sub 13</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2012, 2013</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Society</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dia-horarios" id="quarta">
+                <h2>Quarta-Feira</h2>
+                <div class="horarios-grid">
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">08:30</span>
+                            <span class="categoria">Sub 13/15</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2010, 2011 e 2012</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Oficial</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">17:00</span>
+                            <span class="categoria">Sub 17 (Base)</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Base</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Oficial</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">18:00</span>
+                            <span class="categoria">Sub 7</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2018 e 2019</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Society</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">19:00</span>
+                            <span class="categoria">Sub 9</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2016 e 2018</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Society</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">20:00</span>
+                            <span class="categoria">Sub 11</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2014 e 2015</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Society</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dia-horarios" id="quinta">
+                <h2>Quinta-Feira</h2>
+                <div class="horarios-grid">
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">15:30</span>
+                            <span class="categoria">Sub 13/14/15</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2010, 2011 e 2012</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Oficial</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">16:30</span>
+                            <span class="categoria">Sub 10/11/12</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2013, 2014 e 2015</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Oficial</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">18:00</span>
+                            <span class="categoria">Sub 9</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2016, 2017</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Society</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">19:00</span>
+                            <span class="categoria">Sub 11</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2014, 2015</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Society</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+
+                    <div class="horario-card">
+                        <div class="horario-header">
+                            <span class="horario">20:00</span>
+                            <span class="categoria">Sub 13</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2012, 2013</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Society</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dia-horarios" id="sabado">
+                <h2>Sábado</h2>
+                <div class="horarios-grid">
+                    <div class="horario-card destaque">
+                        <div class="horario-header">
+                            <span class="horario">08:00</span>
+                            <span class="categoria">Baby Fut</span>
+                        </div>
+                        <div class="horario-info">
+                            <p><i class="fas fa-user-friends"></i> Nascidos em 2020 e 2021</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Campo Society</p>
+                            <p><i class="fas fa-users"></i> Vagas Disponíveis</p>
+                        </div>
+                        <a href="https://organizadornovo.ritmoapi.com/ritmo-equipes/AUDAZ_ACADEMY" class="horario-btn" target="_blank">Agendar Aula</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botão flutuante do WhatsApp -->
+        <a href="https://wa.me/5519991684971" class="whatsapp-float" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="imagens/logo.png" alt="Logo Audaz" class="footer-logo">
+                    <p>Desenvolvendo atletas e formando cidadãos desde 2020.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-phone"></i> (19) 99168 - 4971</p>
+                    <p><i class="fas fa-envelope"></i>audazacademy@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Pacífico Moneda, 1850 - Vargeão, Jaguariúna - SP</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/audazacademy?igsh=MWpyNWRnaXcwajVraw==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@audazfc?_t=ZM-8trCATZ5aR4&_r=1" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/5519991684971" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Solyt Company. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Adicione antes do fechamento do body -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const diaBtns = document.querySelectorAll('.dia-btn');
+        const diaHorarios = document.querySelectorAll('.dia-horarios');
+
+        diaBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active de todos os botões e containers
+                diaBtns.forEach(b => b.classList.remove('active'));
+                diaHorarios.forEach(d => d.classList.remove('active'));
+
+                // Adiciona active ao botão clicado e seu container correspondente
+                btn.classList.add('active');
+                const diaId = btn.getAttribute('data-dia');
+                document.getElementById(diaId).classList.add('active');
+            });
+        });
+    });
+    </script>
+    <script src="../js/menu.js"></script>
+</body>
+
+</html>

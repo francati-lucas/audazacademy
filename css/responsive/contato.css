@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+    .contato-section {
+        padding: 40px 0;
+    }
+    /* ... outros estilos responsivos do contato ... */
+} 

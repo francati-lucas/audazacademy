@@ -1,0 +1,611 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Reveal on Scroll - estados iniciais e ativos */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Carrossel Section */
+.carousel-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    background-color: #f9f9f9; /* Mesma cor da company-section */
+}
+
+/* Ajuste para o background se estender por toda a largura */
+main {
+    background-color: #f9f9f9; /* Mesma cor da company-section */
+}
+
+/* Mantendo o background branco apenas nas seções que precisam */
+.about-section {
+    background-color: #fff;
+}
+
+/* Carrossel */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Mantendo a altura aumentada */
+    overflow: hidden; /* Voltando para hidden */
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+    
+}
+
+.carousel-slide {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px; /* Mantendo o border-radius igual ao do container */
+}
+
+/* Novo estilo para o conteúdo do carousel */
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    max-width: 800px;
+    z-index: 2;
+}
+
+.carousel-slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+}
+
+.carousel-content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+}
+
+.carousel-btn:hover {
+    background-color: white;
+    color: #38013f;
+    transform: translateY(-3px);
+}
+
+/* Indicadores do Carrossel */
+.carousel-indicators {
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+    z-index: 3;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: transparent; /* Fundo transparente */
+    border: 2px solid #38013f;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.indicator.active {
+    background-color: #38013f; /* Indicador ativo preenchido */
+    transform: scale(1.1); /* Reduzido o scale para ficar mais sutil */
+}
+
+.indicator:hover {
+    background-color: rgba(56, 1, 63, 0.3); /* Cor suave ao hover */
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.02);
+}
+
+.about-content {
+    flex: 1;
+    max-width: 45%;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #38013f;
+    margin-bottom: 1.5rem;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 2;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.about-cta {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: #38013f;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid #38013f;
+}
+
+.about-cta:hover {
+    background-color: transparent;
+    color: #38013f;
+    transform: translateY(-3px);
+}
+
+/* Company Section */
+.company-section {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.company-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 0 20px;
+}
+
+.company-content {
+    flex: 1;
+    max-width: 45%;
+}
+
+.company-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #38013f;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.company-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.company-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+.company-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.company-image img:hover {
+    transform: scale(1.02);
+}
+
+/* Highlights */
+.company-highlights {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.highlight {
+    text-align: center;
+}
+
+.highlight-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #38013f;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.highlight p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Team Section */
+.team-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.team-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #38013f;
+    margin-bottom: 3rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.team-card {
+    width: 100%;
+    max-width: 280px; /* Aumentado um pouco para ter mais espaço */
+    height: 380px; /* Aumentado para acomodar melhor o conteúdo */
+    perspective: 1000px;
+}
+
+.team-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.team-card:hover .team-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Estilo comum para frente e verso */
+.team-card-front, .team-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+/* Frente do card */
+.team-card-front {
+    overflow: hidden;
+}
+
+/* Verso do card */
+.team-card-back {
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px; /* Aumentado o padding */
+    background-color: #38013f;
+    color: white;
+}
+
+.team-description {
+    padding: 0; /* Removido padding extra */
+    width: 100%; /* Garante que use toda a largura disponível */
+}
+
+.team-description h3 {
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.team-description h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.team-description p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 0 10px; /* Adicionado padding lateral */
+}
+
+.team-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.team-social a {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+
+.team-social a:hover {
+    transform: translateY(-3px);
+    opacity: 1;
+}
+
+/* Ajustes na frente do card */
+.team-card-front {
+    overflow: hidden;
+}
+
+.team-info {
+    padding: 20px 15px; /* Ajustado padding */
+}
+
+.team-info h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #38013f;
+    margin-bottom: 8px;
+}
+
+.team-info p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Ajuste na imagem do card */
+.team-image {
+    width: 100%;
+    height: 250px;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #38013f;
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-logo {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 2px;
+    background-color: white;
+}
+
+.footer-section p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.footer-section p i {
+    margin-right: 10px;
+    color: white;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social .social-icon {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.footer-social .social-icon:hover {
+    color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+/* Animação de pulso para o botão */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.whatsapp-float {
+    animation: pulse 2s infinite;
+}
+
+
+

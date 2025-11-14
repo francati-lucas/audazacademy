@@ -1,0 +1,224 @@
+/* Hero Section */
+.horarios-hero {
+    background-color: #38013f;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+}
+
+.horarios-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.horarios-hero p {
+    font-size: 1rem;
+    opacity: 0.9;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Navegação dos dias */
+.horarios-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+}
+
+.dias-navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.dia-btn {
+    padding: 12px 25px;
+    border: 2px solid #38013f;
+    background: transparent;
+    color: #38013f;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dia-btn.active,
+.dia-btn:hover {
+    background: #38013f;
+    color: white;
+}
+
+/* Container dos horários */
+.dia-horarios {
+    display: none;
+}
+
+.dia-horarios.active {
+    display: block;
+}
+
+.dia-horarios h2 {
+    color: #38013f;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.dia-horarios h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #38013f;
+}
+
+/* Grid de horários */
+.horarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Card de horário */
+.horario-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.horario-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(56, 1, 63, 0.15);
+}
+
+.horario-header {
+    background: #38013f;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horario {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.categoria {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.horario-info {
+    padding: 20px;
+}
+
+.horario-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #666;
+}
+
+.horario-info i {
+    color: #38013f;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.horario-btn {
+    display: block;
+    margin: 0 20px 20px;
+    padding: 12px;
+    background: #38013f;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.horario-btn:hover {
+    background: #4b0252;
+    transform: translateY(-2px);
+}
+
+/* Destaque para turmas especiais */
+.horario-card.destaque {
+    border: 2px solid #38013f;
+    background: linear-gradient(45deg, rgba(56, 1, 63, 0.03), rgba(56, 1, 63, 0.06));
+}
+
+.horario-card.destaque h3 {
+    color: #38013f;
+}
+
+.horario-card.destaque .horario-header {
+    background: linear-gradient(45deg, #38013f, #4b0252);
+}
+
+.horario-card.destaque .categoria {
+    background: rgba(255, 255, 255, 0.3);
+    font-weight: 600;
+}
+
+/* Indicador de vagas */
+.vagas {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(56, 1, 63, 0.1);
+}
+
+.vagas.disponivel {
+    color: #28a745;
+}
+
+.vagas.limitado {
+    color: #ffc107;
+}
+
+.vagas.esgotado {
+    color: #dc3545;
+}
+
+/* Filtros de Horários */
+.horarios-filtros {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.filtro-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: transparent;
+    border: 2px solid #38013f;
+    color: #38013f;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filtro-btn:hover,
+.filtro-btn.active {
+    background-color: #38013f;
+    color: white;
+}
